@@ -1,0 +1,47 @@
+// base
+body{
+    h1,h2,h3,h4,h5,.header{
+        @include font_header;
+        margin: 0;        
+        text-shadow:none;
+    }
+
+    h1,h2{
+        letter-spacing: -1px;
+        text-transform: uppercase;
+    }
+
+    nav, header,footer{
+        clear: both;
+    }
+
+    .container {
+        @include container;
+    }
+
+    a{
+        color: $link_color;
+        transition: .5s all;
+        text-decoration:none;
+        &:hover{
+            color: $bgsolid-color;
+        }
+    }
+
+    .button{
+        @include button;
+        transition: .5s all;
+    }
+
+    .button:hover{
+        background-color: $button-color;
+        color: $bright-color;
+    }
+
+    font-family: $font_normal;
+    margin: 0px;
+    padding: 0px;
+    font-size: .87em;
+    color: $color;
+    text-shadow:0 0 $link_color;
+}

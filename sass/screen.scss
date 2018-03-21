@@ -1,0 +1,299 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "bower_components/compass-sass-mixins/lib/compass";
+
+
+$color : #5a6175;
+$link_color: #5fc0c3;
+$button-color:#5bc0c3;
+$bright-color:#fff;
+$font_normal:OpenSans;
+$bgsoft-color:#f1f2f5;
+$bgsolid-color:#444850;
+
+@mixin font_header{
+    font-family: 'Museo Sans 500';
+    color: #565659;
+    font-weight: 500;
+}
+
+@mixin display_flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+}
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans.eot');
+    src: url('../fonts/OpenSans.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/OpenSans.woff2') format('woff2'),
+        url('../fonts/OpenSans.woff') format('woff'),
+        url('../fonts/OpenSans.ttf') format('truetype'),
+        url('../fonts/OpenSans.svg#OpenSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans 500';
+    src: url('../fonts/MuseoSans-500.eot');
+    src: url('../fonts/MuseoSans-500.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MuseoSans-500.woff2') format('woff2'),
+        url('../fonts/MuseoSans-500.woff') format('woff'),
+        url('../fonts/MuseoSans-500.ttf') format('truetype'),
+        url('../fonts/MuseoSans-500.svg#MuseoSans-500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans 300';
+    src: url('../fonts/MuseoSans-300.eot');
+    src: url('../fonts/MuseoSans-300.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MuseoSans-300.woff2') format('woff2'),
+        url('../fonts/MuseoSans-300.woff') format('woff'),
+        url('../fonts/MuseoSans-300.ttf') format('truetype'),
+        url('../fonts/MuseoSans-300.svg#MuseoSans-300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// base
+body{
+    h1,h2,h3,h4,h5,.header{
+        @include font_header;
+        margin: 0;        
+    }
+
+    h1,h2{
+        letter-spacing: -1px;
+        text-transform: uppercase;
+    }
+
+    nav, header,footer{
+        clear: both;
+    }
+
+    a{
+        color: $link_color;
+    }
+
+    .button{
+        background-color: $button-color;
+        text-transform: uppercase;
+        color: $bright-color;
+    }
+
+    .col-md-4{
+        width: 33.3%;
+        float: left;
+    }
+
+    .col-md-3{
+        width: 24.9%;
+        float: left;
+    }
+
+
+
+    font-family: $font_normal;
+    margin: 0px;
+    padding: 0px;
+    font-size: .87em;
+    color: $color;
+    text-shadow:0 0 $link_color;
+}
+
+//layout
+body{
+    nav{
+        #sitelogo{
+            img{
+                height: 40px;
+                width: auto;
+            }
+            float: left;
+            padding: 18px;
+        }
+
+        .region-nav{
+            #block-system-main-menu{
+                ul.menu{
+                    li.leaf{
+                        a{
+                            @include font_header;
+                        }
+
+                        a:visited{
+                            @include font_header;
+                        }
+                        @include font_header;
+                    }
+                    text-align: right;
+                }
+
+            }
+            float: right;
+            display: block;
+            text-align: right;
+        }
+    }
+}
+
+//modules and blocks
+body{
+    .block{
+        .view-header p{
+            line-height: 2em;
+
+        }
+
+    }
+
+    .row-flex{
+        .view-content{
+            @include display_flex;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    #block-system-main-menu{
+        ul.menu{
+            li.leaf{
+                a{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 1.05em;
+                }
+                list-style: none;
+                float: left;
+                padding: 1rem;
+            } 
+        }
+
+    }   
+
+    #block-views-home-banner-block{
+        .banner-container{
+            h1{
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 3rem;
+                font-weight: lighter;
+                font-family: 'Museo Sans 300';
+                letter-spacing: -1px;
+                margin:0px;
+                text-shadow:none;
+            }
+
+            p{
+                max-width: 37em;
+                margin: 1em auto;
+                line-height: 2em;
+            }
+
+            padding: 5rem;
+            text-shadow:0 0 #fff;
+            background-size: cover;
+            background-position: center top;
+            color: #fff;
+            font-size: 1.0rem;
+        }
+        text-align: center;
+    }
+
+    #block-views-get-involved-block{
+        h1{
+            text-transform: uppercase;
+        }
+
+        .views-row{
+            .views-field{
+                h3{
+                    text-transform: uppercase;
+                }
+
+                max-width: 20em;
+                margin: 0 auto;
+            }
+
+            .views-field-field-image{
+                img{
+                    height: 8em;
+                    width: auto; 
+                }
+                padding: 2.5em;
+            }
+
+            .views-field-field-link{
+                a{
+                    display: block;
+                    border: 1px solid $link_color;
+                    width: 14em;
+                    padding: .6em .5em;
+                    text-decoration: none;
+                    margin: 0 auto;
+                    text-transform: uppercase;
+                    text-shadow:0 0 $link_color;
+                }
+                margin: 2em auto 0;
+            }
+
+            width: 33.3%;
+            display: inline;
+            float: left;
+        }
+        text-align: center;
+        padding: 2em;
+        clear: both;
+    }
+
+    #block-views-mission-block{
+
+        .views-row{
+            .views-field{
+                background-color: #fff;
+                margin: 0 1em;
+            }
+
+            .views-field-field-image{
+                img{
+                    border: .7em solid #fff;
+                    @include border-radius(50%);
+                    width: auto;
+                    height: 6em;
+                }
+                background-color: rgba(241,242,245,1);
+                @include filter-gradient(#f1f2f5, #ffffff, vertical);
+                @include background-image(linear-gradient(top, rgba(241,242,245,1) 0%, rgba(241,242,245,1) 50%, rgba(255,255,255,1) 51%, rgba(255,255,255,1) 71%, rgba(255,255,255,1) 100%));
+                height: 3.7em; 
+                overflow: visible;
+            }            
+        }
+
+        clear: both;
+        text-align: center;
+        background-color: $bgsoft-color;
+        padding: 2em;
+    }
+
+    #block-views-members-block{
+        clear: both;
+        text-align: center;
+        padding: 2em;
+    }
+}

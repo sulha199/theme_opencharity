@@ -1,0 +1,80 @@
+/*
+Error: File to import not found or unreadable: bower_components/compass-sass-mixins/lib/compass.
+       Load paths:
+         E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass
+         Compass::SpriteImporter
+         E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/sass
+         E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets
+         E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass/css3/stylesheets
+         E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass/_css3.sass/stylesheets
+         E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass/functions/stylesheets
+         E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass/_functions.sass/stylesheets
+         E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass/layout/stylesheets
+         E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass/_layout.sass/stylesheets
+         E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass/reset/stylesheets
+         E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass/_reset-legacy.sass/stylesheets
+         E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass/_reset.sass/stylesheets
+         E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass/_support.sass/stylesheets
+         E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass/typography/stylesheets
+         E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass/_typography.sass/stylesheets
+         E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass/utilities/stylesheets
+         E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass/_utilities.sass/stylesheets
+        on line 7 of E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/sass/screen.scss
+
+2:  * In this file you should write your main styles. (or centralize your imports)
+3:  * Import this file using the following HTML or equivalent:
+4:  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> *\/
+5: 
+6: @import "compass/reset";
+7: @import "bower_components/compass-sass-mixins/lib/compass";
+8: 
+9: 
+10: $color : #5a6175;
+11: $link_color: #5fc0c3;
+12: $button-color:#5bc0c3;
+
+Backtrace:
+E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/sass/screen.scss:7
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/import_node.rb:67:in `rescue in import'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/import_node.rb:44:in `import'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/import_node.rb:28:in `imported_file'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/import_node.rb:37:in `css_import?'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `map'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:159:in `visit'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:8:in `visit'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:36:in `css_tree'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:20:in `render'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/engine.rb:281:in `render'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:331:in `block in watch'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: bower_components/compass-sass-mixins/lib/compass.\A        Load paths:\A          E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass\A          Compass::SpriteImporter\A          E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/sass\A          E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets\A          E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass/css3/stylesheets\A          E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass/_css3.sass/stylesheets\A          E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass/functions/stylesheets\A          E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass/_functions.sass/stylesheets\A          E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass/layout/stylesheets\A          E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass/_layout.sass/stylesheets\A          E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass/reset/stylesheets\A          E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass/_reset-legacy.sass/stylesheets\A          E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass/_reset.sass/stylesheets\A          E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass/_support.sass/stylesheets\A          E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass/typography/stylesheets\A          E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass/_typography.sass/stylesheets\A          E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass/utilities/stylesheets\A          E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/bower_components/compass-sass-mixins/lib/compass/_utilities.sass/stylesheets\A         on line 7 of E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/sass/screen.scss\A \A 2:  * In this file you should write your main styles. (or centralize your imports)\A 3:  * Import this file using the following HTML or equivalent:\A 4:  * <link href=\"/stylesheets/screen.css\" media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" /> */\A 5: \A 6: @import \"compass/reset\";\A 7: @import \"bower_components/compass-sass-mixins/lib/compass\";\A 8: \A 9: \A 10: $color : #5a6175;\A 11: $link_color: #5fc0c3;\A 12: $button-color:#5bc0c3;"; }

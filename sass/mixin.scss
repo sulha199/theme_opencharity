@@ -1,0 +1,98 @@
+@mixin font_header{
+    font-family: 'Museo Sans 500';
+    color: #565659;
+    font-weight: 500;
+}
+
+@mixin container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    @media (min-width: 768px) {
+        width: 750px;
+    }
+    @media (min-width: 992px){
+        width: 970px;
+    }    
+    @media (min-width: 1200px){
+        width: 1100px;
+    }
+}
+
+@mixin display_flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+}
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+}
+
+@mixin border-top-radius($radius) {
+    border-top-left-radius: $radius;    
+    border-top-right-radius: $radius;    
+    -webkit-border-top-left-radius: $radius;
+    -webkit-border-top-right-radius: $radius;
+    -moz-border-top-left-radius: $radius;
+    -moz-border-top-right-radius: $radius;
+}
+
+@mixin border-bottom-radius($radius) {
+    border-bottom-left-radius: $radius;    
+    border-bottom-right-radius: $radius;    
+    -webkit-border-bottom-left-radius: $radius;
+    -webkit-border-bottom-right-radius: $radius;
+    -moz-border-bottom-left-radius: $radius;
+    -moz-border-bottom-right-radius: $radius;
+}
+
+@mixin full-width{
+    width: 99%;
+    float: none;
+    clear:both;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+@mixin col($screen,$grid_width) {
+    width: $grid_width;
+    float: left;
+    @if $screen=="md"{
+        @media #{$screen-md-down} {
+            @include full-width;
+        }
+    }
+    @if $screen=="sm"{
+        @media #{$screen-sm-down} {
+            @include full-width;
+        }
+    }
+    @if $screen=="xs"{
+        @media #{$screen-xs-down} {
+            @include full-width;
+        }
+    }
+
+}
+
+@mixin button{
+    display: block;
+    border: 1px solid $link_color;
+    /*width:80%;*/
+    /*max-width: 14em;*/
+    padding: .6em .5em;
+    text-decoration: none;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-shadow:0 0 $link_color;
+    &:hover{
+        background: $link_color;
+        color: $bright-color;
+    }
+}
