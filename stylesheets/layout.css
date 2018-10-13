@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$navbar-height".
-        on line 25 of E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/sass/layout.scss
+        on line 31 of E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/sass/layout.scss
 
-20:                 top: 0;  
-21:                 bottom: 0;  
-22:                 left: 0;  
-23:                 margin: auto;
-24:             }
-25:             height: $navbar-height; /*can be anything*\/
-26:             text-align: center;
-27:             margin: 0 auto;
-28:             position: absolute;
-29:         }
-30: 
+26:                 top: 0;  
+27:                 bottom: 0; 
+28:                 left: 0;  
+29:                 margin: auto;
+30:             }
+31:             height: $navbar-height; /*can be anything*\/
+32:             text-align: center;
+33:             margin: 0 auto;
+34:             position: absolute;
+35:         }
+36: 
 
 Backtrace:
-E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/sass/layout.scss:25
+E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/sass/layout.scss:31
 E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/script/tree/variable.rb:49:in `_perform'
 E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/script/tree/node.rb:58:in `perform'
 E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -89,4 +89,4 @@ E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/li
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$navbar-height\".\A         on line 25 of E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/sass/layout.scss\A \A 20:                 top: 0;  \A 21:                 bottom: 0;  \A 22:                 left: 0;  \A 23:                 margin: auto;\A 24:             }\A 25:             height: $navbar-height; /*can be anything*/\A 26:             text-align: center;\A 27:             margin: 0 auto;\A 28:             position: absolute;\A 29:         }\A 30: "; }
+  content: "Error: Undefined variable: \"$navbar-height\".\A         on line 31 of E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/sass/layout.scss\A \A 26:                 top: 0;  \A 27:                 bottom: 0; \A 28:                 left: 0;  \A 29:                 margin: auto;\A 30:             }\A 31:             height: $navbar-height; /*can be anything*/\A 32:             text-align: center;\A 33:             margin: 0 auto;\A 34:             position: absolute;\A 35:         }\A 36: "; }

@@ -1,5 +1,11 @@
 //layout
+html{
+    height: 100%;
+}
 body{
+    #wrapper{
+    }
+    
     &.front{
         .region-content{
             #block-system-main{
@@ -18,7 +24,7 @@ body{
                 width: auto;
                 position: absolute;  
                 top: 0;  
-                bottom: 0;  
+                bottom: 0; 
                 left: 0;  
                 margin: auto;
             }
@@ -36,7 +42,7 @@ body{
             padding: 0 1em;
             @media #{$screen-sm-down}{                
                 display: block;
-
+                font-size:2em;
             }
         }
 
@@ -90,7 +96,7 @@ body{
             height: $navbar-height; /*can be anything*/
             margin: 0 auto;
             position: relative;
-            transition: 1.0s ease-in-out;
+            transition: opacity 1.0s;
             @media #{$screen-sm-down}{
                 float:none;
                 width:100%;
@@ -101,13 +107,14 @@ body{
                 background-color:$bgsoft-color;
                 left:0;
                 display:none;
-                opacity:0.2;
+                opacity:0; 
             }
         }
         &.responsive {
             .region-nav{
                 display: block;
-                opacity: 1;
+                opacity: 1;                
+                transition:1.0s;
             }
             a.icon{
                 position: absolute;
@@ -139,6 +146,30 @@ body{
         }
         margin-top: $navbar-height;
     }
+
+    div#after-header{
+        .region .block{
+            &:first-child{
+                border-top: 0px;
+                margin-top: 0;
+            }
+            margin-top: 2em;
+            border-top: 1px solid #d9dadd;
+        }
+        background-color: #F1F2F5;       
+    } 
+
+    div#before-content{   
+        .region .block{
+            &:first-child{
+                border-top: 0px;
+                margin-top: 0;
+            }
+            margin-top: 2em;
+            border-top: 1px solid #d9dadd;
+        }
+    }
+
     div#main{
         #content{
             clear: left;
@@ -167,6 +198,29 @@ body{
         position: relative;
     }
 
+    div#after-content{
+        .region .block{
+            &:first-child{
+                border-top: 0px;
+                margin-top: 0;
+            }
+            margin-top: 2em;
+            border-top: 1px solid #d9dadd;
+        }
+        background-color: #F1F2F5;        
+    }
+
+    div#before-footer{
+        .region .block{
+            &:first-child{
+                border-top: 0px;
+                margin-top: 0;
+            }
+            margin-top: 2em;
+            border-top: 1px solid #d9dadd;
+        }
+    }
+
     footer{
         a{
             text-decoration:none;
@@ -188,15 +242,26 @@ body{
         padding-bottom: 1rem;
         color: #969eb6;
         text-align:center;
+        position: relative;
+        bottom: 0;
+        width: 100%; 
+        flex-shrink: 0;
     }
 
     .flex-slider{
+        &.flex-sidebutton.has-button{
+            .view-content{
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+        }
         .slide-buttons{
             a{
                 color: #979EB2;
                 text-decoration: none;
                 font-size: 20px;
                 padding: 0 2px;
+                cursor: pointer;
                 &.active{
                     color: #5BC0C3 !important; 
                 }
@@ -206,40 +271,42 @@ body{
         .view-content{
             .views-row{
                 display: inline-block;
-                /*border: 1px solid #0062A0;*/
                 margin: 0;
                 position: relative;
+                left: 0;
+                transition: .5s all;        
             }            
             white-space: nowrap;
-            width: 100%;
-            overflow:visible !important;
+            overflow:hidden !important;
             transition: .5s all;            
         }
 
         .side-button-l{
             float: left;
-            position: relative;
-            z-index: 10;
+            position: absolute;
+            top: 50%;
+            z-index: 9;
             font-size: 30px;
             color: #5BC0C3;
             text-decoration: none;
             background-color: #FFF;
-            /*            position: fixed;*/
             left: 0;
+            cursor: pointer;
         }
         .side-button-r{
             float: right;
-            position: relative;
-            z-index: 10;
+            position: absolute;
+            top: 50%;
+            z-index: 9;
             font-size: 30px;
             color: #5BC0C3;
             text-decoration: none;
             background-color: #FFF;
-            /*position: fixed;*/
             right: 0;
+            cursor: pointer;
         }
-        overflow: hidden;
-        /*border: 1px solid #ececec;*/
+        overflow: hidden !important;
+        position: relative;
         clear: both;
     }
     input[type=button],input[type=submit]{
@@ -257,7 +324,9 @@ body{
             height: auto;
         }
     }
-    position: relative;
     margin: 0;
     min-height: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
