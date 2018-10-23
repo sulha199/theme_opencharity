@@ -2,7 +2,7 @@ $color : #5a6175;
 $link_color: #5fc0c3;
 $button-color:#5bc0c3;
 $bright-color:#fff;
-$font_normal:OpenSans;
+$font_normal:OpenSans, "Open Sans";
 $bgsoft-color:#f1f2f5;
 $bgsolid-color:#444850;
 $screen-md-up:"only screen and (min-width : 993px)";
@@ -440,14 +440,12 @@ body{
             margin-top: 1.5rem;
         }
         .side-button-l{
-            padding-left: 15px;
             color: $link_color;
             &:hover{
                 color: $bgsolid-color;
             }
         }
         .side-button-r{
-            padding-right: 15px;
             color: $link_color;
             &:hover{
                 color: $bgsolid-color;

@@ -11,7 +11,7 @@ Error: Undefined variable: "$navbar-height".
 32:             text-align: center;
 33:             margin: 0 auto;
 34:             position: absolute;
-35:         }
+35:         } 
 36: 
 
 Backtrace:
@@ -89,4 +89,4 @@ E:/APP/Ruby/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.4.24/vendor/listen/lib/li
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$navbar-height\".\A         on line 31 of E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/sass/layout.scss\A \A 26:                 top: 0;  \A 27:                 bottom: 0; \A 28:                 left: 0;  \A 29:                 margin: auto;\A 30:             }\A 31:             height: $navbar-height; /*can be anything*/\A 32:             text-align: center;\A 33:             margin: 0 auto;\A 34:             position: absolute;\A 35:         }\A 36: "; }
+  content: "Error: Undefined variable: \"$navbar-height\".\A         on line 31 of E:/APP/Project/Corpucorp-OpenCharity/drupal/opencharity-shulha/themes/opencharity/sass/layout.scss\A \A 26:                 top: 0;  \A 27:                 bottom: 0; \A 28:                 left: 0;  \A 29:                 margin: auto;\A 30:             }\A 31:             height: $navbar-height; /*can be anything*/\A 32:             text-align: center;\A 33:             margin: 0 auto;\A 34:             position: absolute;\A 35:         } \A 36: "; }

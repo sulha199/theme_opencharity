@@ -54,14 +54,14 @@
                     childs[j].offsetWidth = colwidth + '%';
                     childs[j].name = j;
                 }
-                
-                
+
+
                 var buttonCount = Math.ceil(childs.length / colcount);
                 // make sure the active button is not for button outside 
                 var currentActiveButtonIdByCurrentOffset = Math.round((parseFloat(childs[0].style.left) || 0) / -100);
-                var currentActiveButtonId = Math.min(currentActiveButtonIdByCurrentOffset,buttonCount - 1) ;        
+                var currentActiveButtonId = Math.min(currentActiveButtonIdByCurrentOffset, buttonCount - 1);
                 // make sure the left ofset not outside the bound
-                this.pullBy(el,currentActiveButtonId * 100, colcount);
+                this.pullBy(el, currentActiveButtonId * 100, colcount);
 
                 if (sidebutton) {
                     this.putSideButton(el, colcount, i);
@@ -103,8 +103,15 @@
                 el.insertBefore(butr, el.getElementsByClassName('view-content')[0]);
                 el.insertBefore(butl, el.getElementsByClassName('view-content')[0]);
                 el.classList.add('has-button');
+                // check the button whether should be outside 
+                if (el.getElementsByClassName('view-content')[0].offsetWidth + 2 * el.getElementsByClassName('view-content')[0].offsetLeft + 60 < window.innerWidth) {
+                    el.classList.add('has-button-outside');
+                } else {
+                    el.classList.remove('has-button-outside');
+                }
             } else {
                 el.classList.remove('has-button');
+                el.classList.remove('has-button-outside');
             }
 
         },
@@ -122,11 +129,11 @@
             buts = document.createElement("div");
             buts.className = 'slide-buttons';
             el.appendChild(buts);
-                
+
             var buttonCount = Math.ceil(childs.length / colcount);
             // make sure the active button is not for button outside 
             var currentActiveButtonIdByCurrentOffset = Math.round((parseFloat(childs[0].style.left) || 0) / -100);
-            var currentActiveButtonId = Math.min(currentActiveButtonIdByCurrentOffset,buttonCount - 1) ;        
+            var currentActiveButtonId = Math.min(currentActiveButtonIdByCurrentOffset, buttonCount - 1);
             for (var j = 0; j < buttonCount; j++) {
                 var node = document.createElement("a");
                 node.className = "flex-slider-button";
@@ -135,13 +142,13 @@
                     node.className += " active";
                 buts.appendChild(node);
             }
-            
+
             // if the button only 1 then hide it and no need to attach click even
-            if (buttonCount <= 1){
-                buts.getElementsByClassName('flex-slider-button')[0].style.visibility='hidden';
+            if (buttonCount <= 1) {
+                buts.getElementsByClassName('flex-slider-button')[0].style.visibility = 'hidden';
                 return;
             }
-            
+
             // append event to bullet buttons
             var bulletButtons = el.getElementsByClassName('flex-slider-button');
             for (j = 0; j < bulletButtons.length; j++) {
@@ -169,7 +176,7 @@
             if (offset <= maxPull * -100)
                 offset = 0;
             for (var j = 0; j < childs.length; j++) {
-                childs[j].style.left = Math.floor(offset - j * 1.0 / (colcount+0)) + '%';
+                childs[j].style.left = Math.floor(offset - j * 1.0 / (colcount + 0)) + '%';
             }
         },
         pullRight: function (sliderObj, colcount) {
@@ -179,7 +186,7 @@
             if (offset > 0)
                 offset = (maxPull - 1) * -100;
             for (var j = 0; j < childs.length; j++) {
-                childs[j].style.left = Math.floor(offset - j * 1.0 / (colcount+0)) + '%';
+                childs[j].style.left = Math.floor(offset - j * 1.0 / (colcount + 0)) + '%';
             }
         }
     }
@@ -188,7 +195,7 @@
     document.addEventListener("DOMContentLoaded", function () {
         OSlider = new Ocslider('flex-slider');
     });
-    
+
     window.addEventListener("resize", function () {
         OSlider.init();
     });
@@ -197,7 +204,5 @@
     document.getElementsByClassName('side-button-l').onclick = function () {
         OcSlider.transformLeft(this.parentNode);
     }
-
-
 
 }());
