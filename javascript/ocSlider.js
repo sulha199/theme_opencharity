@@ -21,7 +21,6 @@
 
     Ocslider.prototype = {
         init: function () {
-            console.log('slider initiates')
             for (var i = 0; i < this.sliders.length; i++) {
                 var el = this.sliders[i];
                 var pw = el.offsetWidth;
