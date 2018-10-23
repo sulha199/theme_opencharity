@@ -1,6 +1,3 @@
-# cache
-.sass-cache
-
 # OS
 .DS_Store
 
@@ -14,3 +11,6 @@ npm-debug.log
 .libraries
 lib
 starterkits/*/bootstrap
+
+# cache
+.sass-cache
