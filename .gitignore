@@ -12,6 +12,5 @@ npm-debug.log
 lib
 starterkits/*/bootstrap
 
-
 # cache
 .sass-cache
