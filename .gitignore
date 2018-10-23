@@ -1,2 +1,16 @@
-[sass]
-/.sass-cache/
+# OS
+.DS_Store
+
+# Applications & Tools
+.idea
+config.codekit
+node_modules
+npm-debug.log
+
+# Project Specific
+.libraries
+lib
+starterkits/*/bootstrap
+
+# cache
+.sass-cache
