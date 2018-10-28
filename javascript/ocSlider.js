@@ -39,9 +39,9 @@
                 });
                 // assign width to col
                 var childs = el.getElementsByClassName('views-row');
-                var colcount = Math.floor(pw / width);
+                var colcount = Math.max(Math.floor(pw / width),1);
                 var buttons = Math.ceil(pw / width);
-                var coldiv = (childs.length < colcount) ? childs.length : colcount;
+                var coldiv = Math.max((childs.length < colcount) ? childs.length : colcount, 1);
                 var colwidth = (100 / coldiv) - this.widthGap;
 
 
